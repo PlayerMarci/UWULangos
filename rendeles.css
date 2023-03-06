@@ -1,0 +1,468 @@
+:root{
+    --szin1: #FFA2FF;
+    --szin2: #ffffff;
+    --szin3: #191919;
+    --szin4: #ee4411;
+    --szin5: #23df2c;
+}
+
+@keyframes icon {
+    25% {
+        transform: translateY(-1.5rem);
+    }
+    50% {
+        transform: translateY(1.5rem);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: none;
+}
+
+html{
+    font-size: 65%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+
+html::-webkit-scrollbar-thumb{
+    background: var(--szin4);
+}
+section{
+    padding: 4rem 9%;
+    margin-top: 8rem;
+}
+
+section h4{
+    margin-top: 1rem;
+    padding: .2rem;
+    width: 50%;
+    font-size: 3rem;
+    color: var(--szin2);
+    text-transform: none;
+    text-align: center;
+    align-items: center;
+    letter-spacing: .1rem;
+    border: 2px solid var(--szin3);
+    border-radius: 0.5rem;
+    background: var(--szin4);
+}
+
+section h3{
+    font-size: 3rem;
+    color: var(--szin2);
+    text-transform: none;
+    text-align: center;
+    letter-spacing: .2rem;
+}
+
+section p{
+    color: var(--szin2);
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    word-wrap: normal;
+}
+
+.butt{
+    margin-top: 2rem;
+    padding: 1.3rem 4rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    font-weight: 500;
+    color: var(--szin3);
+    background: var(--szin2);
+    border: transparent;
+    border-radius: 0.5rem;
+    box-shadow: 0  2rem 2rem rgba(0,0,0,0.1);
+    transition: all .3s ease;
+    cursor: pointer;
+    outline: transparent;
+}
+
+.butt:hover{
+    background-color: var(--szin3);
+    box-shadow: 0  2rem 2rem rgba(255,85,94,0.4);
+    color: var(--szin2);
+    transform: translateY(-1rem);
+}
+
+.head{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    background: var(--szin4);
+    color: var(--szin2);
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head h1{
+    font-size: 3rem;
+}
+
+.head .navbar a{
+    color: var(--szin2);
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0 2rem;
+    text-decoration: none;
+}
+
+.head h1 a{
+    color: var(--szin2);
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0 2rem;
+    text-decoration: none;
+}
+
+.head .navbar a:hover{
+    color: var(--szin2);
+    transition: .5s ease;
+}
+
+.head .side-bar i{
+    padding: 1.5rem;
+    font-size: 2.1rem;
+    border: none;
+    background: var(--szin2);
+    color: var(--szin4);
+}
+
+.head .side-bar i:hover{
+    background: var(--szin3);
+    color: var(--szin4);
+    transition: .5s ease;
+}
+.head h1 a img{
+    height: 10rem;
+    width: auto;
+}
+
+#bars{
+    display: none;
+}
+/*--------------kosár---------------*/
+.basket{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background: transparent;
+}
+.basket .basket-content i{
+    padding-top: .4rem;
+    padding-left: .5rem;
+    font-size: 5.5rem;
+    color: var(--szin3);
+}
+
+.dot {
+    height: 7rem;
+    width: 7rem;
+    background-color: var(--szin4);
+    border-radius: 50%;
+    display: inline-block;
+}
+
+
+/*-------------------Főoldal---------------*/
+.home{
+    margin-top: 0;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/backg_01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.home .home-content{
+    margin-top: 10rem;
+}
+
+.inner-content-img{
+    margin-top: 2rem;
+}
+
+
+.inner-content-img img{
+    padding-top: 5rem;
+    width: 100%;
+    height: auto;
+    animation: icon 5s ease infinite;
+}
+
+
+.inner-content{
+    max-width: 70rem;
+    margin-top: 20rem;
+    text-align: center;
+}
+
+/*--------------About section-------------*/
+
+
+.img img{
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    animation: icon 4s ease infinite;
+}
+
+.about-content h3{
+    border: .2rem solid var(--szin3);
+    border-radius: 0.5rem;
+    background: var(--szin4);
+    color: var(--szin3);
+}
+
+.about a .butt{
+    border: .1rem solid var(--szin4);
+}
+
+.about-content p{
+    padding-bottom: 2rem;
+    color: var(--szin3);
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.about-inner h5{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.about-inner h5:hover{
+    transform: translateX(2rem);
+    transition: 1s ease;
+}
+
+.about-inner .fa-circle-check{
+    color: var(--szin4);
+    padding-right: 1rem;
+}
+
+/*----------------szolgáltatások-------------*/
+
+.inner-box{
+    padding: 3rem 2rem;
+    text-align: center;
+    border: .1rem solid var(--szin4);
+    border-radius: 0.5rem;
+    background: #eee;
+}
+
+.inner-box:hover{
+    background: var(--szin4);
+    transition: .5s ease all;
+}
+
+.inner-box img{
+    width: 15rem;
+    height: 15rem;
+}
+
+.inner-box p{
+    height: 14rem;
+    font-size: 1.8rem;
+    color: var(--szin3);
+}
+
+.inner-box h2{
+    padding: 2rem 0;
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+}
+
+/*-------------------menü--------------------*/
+
+.in-box{
+    padding: 3rem 4rem;
+    text-align: center;
+    border: .1rem solid var(--szin4);
+    border-radius: 0.5rem;
+    background: #eee;
+}
+
+.in-box:hover{
+    background: var(--szin4);
+    transition: .4s ease all;
+}
+
+.in-box img{
+    width: 20rem;
+    height: auto;
+}
+
+.in-box .far{
+    position: absolute;
+    font-size: 2.5rem;
+    margin-left: -7rem;
+    color: var(--szin3);
+}
+
+.star, .price{
+    padding: 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--szin3);
+    text-transform: capitalize;
+}
+
+.in-content h2 {
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: none; 
+}
+
+.fa-star{
+    color: var(--szin5);
+}
+
+.in-box .far{
+    font-size: 2rem;
+    color: var(--szin3);
+}
+
+.in-box .fa-cart-plus{
+    color: var(--szin4);
+}
+
+.in-box .in-content .star .input-group {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.in-box .in-content .star .input-group input{
+    font-size: 1.5rem;
+    color: var(--szin3);
+}
+
+.in-box .in-content .star .input-group .input-group-prepend span{
+    font-size: 1.5rem;
+    color: var(--szin3);
+}
+
+.in-box .in-content .star .description{
+    height: 11rem;
+    font-weight: 500;
+}
+
+/*-----------copyright---------------*/
+.contact {
+    background: var(--szin3);
+    color: var(--szin2);
+}
+
+.contact .copyright p{
+    text-transform: none;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 0;
+}
+
+
+/* ---------------media query---------------*/
+
+@media (max-width:990px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+
+}
+
+@media (max-width:450px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width:768px) {
+    #bars{
+        display: inline-block;
+    }
+
+    selection h4{
+        margin-left: 10rem;
+        text-align: center;
+    }
+
+    .head .navbar{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        background: var(--szin3);
+        font-size: 2rem;
+    }
+
+    .head .navbar a{
+        margin: 2rem 2.5rem;
+        display: block;
+        border-right: .1rem solid var(--szin4);
+    }
+    
+    .head .navbar a:hover{
+        transform: translateX(2rem);
+        transition: 1s ease;
+    }
+    .head .navbar.active{
+        display: grid;
+        grid-template-columns: 1.2fr;
+        right: .5rem;
+        transition: .4s ease-in;
+    }
+    .home-content{
+        display: inline-block;
+    }
+
+    .home .home-content{
+        text-align: center;
+    }
+
+    .home .inner-content-img img{
+        width: 35rem;
+    }
+
+    .about-sec{
+        display: inline-block;
+    }
+    
+    .service-content,
+    .menu-content,
+    .inner-blog,
+    .contact-inner {
+        display: inline-block;
+    }
+    .menu-content {
+        margin-left: 4rem;
+    }
+    .blog-content,
+    .service-content {
+        padding: 1rem;
+    }
+}
