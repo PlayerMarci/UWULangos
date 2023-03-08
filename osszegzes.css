@@ -1,5 +1,5 @@
 :root{
-    --szin1: #FFA2FF;
+    --szin1: #ff0000;
     --szin2: #ffffff;
     --szin3: #191919;
     --szin4: #ee4411;
@@ -60,9 +60,15 @@ html::-webkit-scrollbar-thumb{
 /*------table------*/
 .fa-solid{
     font-size: 2rem;
-    color: var(--szin4);
 }
 
+.fa-circle-xmark{
+    color: var(--szin1);
+}
+
+.fa-circle-check{
+    color: var(--szin5);
+}
 /*---contact---*/
 .contact {
     padding-top: 10rem;
